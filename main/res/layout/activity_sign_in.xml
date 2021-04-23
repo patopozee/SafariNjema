@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mycolor"
+    tools:context=".SignInActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:background="@drawable/layout"
+        android:layout_marginTop="-0dp">
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="370dp"
+        android:layout_marginTop="170dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColorHint="#D3D3D3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="55dp"
+        app:boxBackgroundColor="@color/white">
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/mystyle"
+            android:hint="Email/Phone"
+            android:digits="abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345678.@"
+            android:text=""
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="370dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:gravity="center"
+        android:textColorHint="#D3D3D3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="55dp"
+        app:boxBackgroundColor="@color/white"
+        android:layout_below="@id/emailLayout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <EditText
+            android:id="@+id/EditTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:background="@drawable/mystyle"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="-37dp"
+        android:layout_below="@id/etPasswordLayout"
+        android:layout_marginTop="40dp"
+        android:onClick="signInUser"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:background="@drawable/my_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="477dp" />
+        <TextView
+            android:id="@+id/Reset"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Forgot password?"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:clickable="true"
+            android:onClick="Reset"
+            android:textColor="#0000CC"
+            android:layout_marginTop="420dp"
+            android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Don't Have an account?"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="3dp"
+        android:textColor="#A9A9A9"
+        android:layout_marginTop="700dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/Create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sign Up"
+        android:clickable="true"
+        android:onClick="signUp"
+        android:layout_marginLeft="160dp"
+        android:textColor="#0000CC"
+        android:layout_marginTop="700dp"
+        android:textSize="16sp"/>
+    </RelativeLayout>
+</ScrollView>

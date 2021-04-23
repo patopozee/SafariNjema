@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Payments" />
+        <item
+            android:id="@+id/nav_rides"
+            android:title="Rides" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:title="Sign Out" />
+    </group>
+    <item android:title="Share">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_contactUs"
+                android:icon="@drawable/envelope"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+</menu>

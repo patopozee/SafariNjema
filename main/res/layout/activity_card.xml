@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card">
+    <com.braintreepayments.cardform.view.CardForm
+        android:id="@+id/card"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="-37dp"
+        android:background="@drawable/my_shape"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:text="Pay"
+        android:layout_alignParentBottom="true"
+        android:clickable="false"
+        android:enabled="false"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
